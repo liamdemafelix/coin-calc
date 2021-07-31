@@ -93,7 +93,7 @@ export default {
   data() {
     return {
       coins: [],
-      selectedCoin: { code: "cardano", label: "ADA - Cardano", symbol: "ADA" },
+      selectedCoin: { code: "tether", label: "USDT - Tether", symbol: "USDT" },
       coinPrice: "PHP 0.00",
       coinpriceDec: 1,
       buyingPrice: 0,
