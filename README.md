@@ -1,4 +1,4 @@
-## Coin Purchase Calculator
+# Coin Purchase Calculator
 
 Determine how much you're losing (or gaining, on a good day) whenever you buy crypto.
 
@@ -6,7 +6,7 @@ Uses the CoinGecko API to fetch the current market price of a coin.
 
 ## I found a bug
 
-File an issue in the tracker or [mailto:hey@liam.ph](let me know via e-mail).
+File an issue in the tracker or let me know via e-mail: hey@liam.ph
 
 ## License
 
