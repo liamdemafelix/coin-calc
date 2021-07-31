@@ -139,22 +139,29 @@ export default {
               minimumFractionDigits: 2,
             });
           vScope.coinPriceDec = resp.data[vScope.selectedCoin.code].php;
+          this.recalculate();
         });
     },
     recalculate() {
-      this.shouldGetDec = this.buyingAmount / this.coinPriceDec;
-      this.shouldGet = this.selectedCoin.symbol + " " + this.shouldGetDec;
-      this.actualGetDec = this.buyingAmount / this.buyingPrice;
-      this.actualGet = this.selectedCoin.symbol + " " + this.actualGetDec;
-      this.differenceDec = this.actualGetDec - this.shouldGetDec;
-      this.difference = this.selectedCoin.symbol + " " + this.differenceDec;
-      if (this.differenceDec < 0) {
-        this.differenceColor = "red";
-      } else if (this.differenceDec > 0) {
-        this.differenceColor = "green";
+      if (this.buyingPrice > 0 && this.buyingAmount > 0) {
+        this.shouldGetDec = this.buyingAmount / this.coinPriceDec;
+        this.shouldGet = this.selectedCoin.symbol + " " + this.shouldGetDec;
+        this.actualGetDec = this.buyingAmount / this.buyingPrice;
+        this.actualGet = this.selectedCoin.symbol + " " + this.actualGetDec;
+        this.differenceDec = this.actualGetDec - this.shouldGetDec;
+        this.difference = this.selectedCoin.symbol + " " + this.differenceDec;
+        if (this.differenceDec < 0) {
+          this.differenceColor = "red";
+        } else if (this.differenceDec > 0) {
+          this.differenceColor = "green";
+        } else {
+          this.differenceColor = "normal";
+        }
       } else {
-        this.differenceColor = "normal";
+        this.actualGet = "Values must be greater than 0"
+        this.shouldGet = "Values must be greater than 0"
       }
+      
     },
   },
   mounted() {
