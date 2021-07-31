@@ -160,6 +160,9 @@ export default {
   mounted() {
     this.refreshCoinList();
     this.fetchPrice();
+    setInterval(() => {
+      this.fetchPrice();
+    }, 15000)
   },
 };
 </script>
