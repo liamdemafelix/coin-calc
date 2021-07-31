@@ -76,6 +76,8 @@
     </form>
     <div class="text-center mt-1">
       Made with ❤ by Liam Demafelix<br /><br />
+      Found something wrong?
+      <a href="mailto:hey@liam.ph">Let me know</a>.<br /><br />
       🚀 🌑
     </div>
   </div>
