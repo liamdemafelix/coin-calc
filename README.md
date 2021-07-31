@@ -1,24 +1,13 @@
-# coincalc
+## Coin Purchase Calculator
 
-## Project setup
-```
-npm install
-```
+Determine how much you're losing (or gaining, on a good day) whenever you buy crypto.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Uses the CoinGecko API to fetch the current market price of a coin.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## I found a bug
 
-### Lints and fixes files
-```
-npm run lint
-```
+File an issue in the tracker or [mailto:hey@liam.ph](let me know via e-mail).
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+This software is licensed under the MIT Open Source license. Feel free to modify and use according to your own requirements.
