@@ -75,9 +75,12 @@
       </div>
     </form>
     <div class="text-center mt-1">
-      Made with ❤ by Liam Demafelix<br /><br />
+      Made with ❤ by Liam Demafelix
+      <br /><br />
       Found something wrong?
       <a href="mailto:hey@liam.ph">Let me know</a>.<br /><br />
+      <a href="https://github.com/liamdemafelix/coin-calc">View Source</a>
+      <br /><br />
       🚀 🌑
     </div>
   </div>
