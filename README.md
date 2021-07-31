@@ -2,7 +2,7 @@
 
 Determine how much you're losing (or gaining, on a good day) whenever you buy crypto.
 
-Uses the CoinGecko API to fetch the current market price of a coin.
+Written in Vue and uses the CoinGecko API to fetch the current market price of a coin.
 
 ## I found a bug
 
